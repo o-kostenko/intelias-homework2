@@ -12,8 +12,8 @@ func main() {
 	)
 
 	fmt.Printf("Скільки грошей треба витратити, щоб купити %d яблук та %d груш?\n", countApple, countPear)
-	copiika, hryvna := copiikaToHryvna(countPear*pricePear + countApple*priceApple)
-	fmt.Printf("Треба витратити %d гривень та %d копійок.\n\n", copiika, hryvna)
+	hryvna, copiika := copiikaToHryvna(countPear*pricePear + countApple*priceApple)
+	fmt.Printf("Треба витратити %d гривень та %d копійок.\n\n", hryvna, copiika)
 
 	fmt.Println("Скільки груш ми можемо купити?")
 	fmt.Printf("Ми можемо купити %d груші. \n\n", canBuy(debit, pricePear))
